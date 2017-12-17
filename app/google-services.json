@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "783474711462",
+    "firebase_url": "https://sensornetwork-ceaff.firebaseio.com",
+    "project_id": "sensornetwork-ceaff",
+    "storage_bucket": "sensornetwork-ceaff.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:783474711462:android:51b50fc3c187e6b4",
+        "android_client_info": {
+          "package_name": "com.example.samir.sensornet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "783474711462-obuant07r4qf00kgsccpmbj40scf8t95.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.samir.sensornet",
+            "certificate_hash": "b94d4507d9bedb6ac64b6dfcb9eba20d19fc1e91"
+          }
+        },
+        {
+          "client_id": "783474711462-bl6sfe14ifeoma660p5g46amsthkhn18.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCrSdBxhyIPNoN6n2pvXnJJ97snbYNbS6M"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "783474711462-bl6sfe14ifeoma660p5g46amsthkhn18.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
