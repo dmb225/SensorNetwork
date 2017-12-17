@@ -18,7 +18,7 @@ import java.util.Arrays;
 public class DeviceActivity extends AppCompatActivity {
 
     private FirebaseDatabase fbDataBase;
-    private DatabaseReference dbRef;
+    private DatabaseReference DeviceDBRef;
 
     Toolbar mdevToolbar;
     String deviceId = "";
@@ -39,7 +39,7 @@ public class DeviceActivity extends AppCompatActivity {
             deviceId = deviceBundle.getString("Device");
 
             fbDataBase = FirebaseDatabase.getInstance();
-            dbRef = fbDataBase.getReference("DEV").child(deviceId);
+            DeviceDBRef = fbDataBase.getReference("DEV").child(deviceId);
 
             mdevToolbar.setTitle("Device " + deviceId);
 
@@ -49,7 +49,7 @@ public class DeviceActivity extends AppCompatActivity {
             deviceListView = (ListView) findViewById(R.id.edAttributesListView);
             deviceListView.setAdapter(listAdapter);
 
-            dbRef.addValueEventListener(new ValueEventListener() {
+            DeviceDBRef.addValueEventListener(new ValueEventListener() {
                 @Override
                 public void onDataChange(DataSnapshot dataSnapshot) {
                     for(DataSnapshot dev : dataSnapshot.getChildren()) {

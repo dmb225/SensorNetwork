@@ -12,8 +12,14 @@
         android:title="@string/title_dashboard" />
 
     <item
+        android:id="@+id/navigation_frame"
+        android:icon="@drawable/ic_frame_black_24dp"
+        android:title="@string/title_frame" />
+
+    <item
         android:id="@+id/navigation_settings"
         android:icon="@drawable/ic_settings_black_24dp"
         android:title="@string/title_settings" />
+
 
 </menu>

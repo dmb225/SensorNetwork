@@ -51,6 +51,8 @@ public abstract class MenuActivity extends AppCompatActivity implements BottomNa
                 startActivity(new Intent(this, DashboardActivity.class));
             } else if (itemId == R.id.navigation_settings) {
                 startActivity(new Intent(this, SettingsActivity.class));
+            } else if (itemId == R.id.navigation_frame) {
+                startActivity(new Intent(this, FrameDashboardActivity.class));
             }
             finish();
         }, 300);
