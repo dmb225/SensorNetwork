@@ -15,14 +15,15 @@
             android:id="@+id/deviceToolbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/colorPrimary"
+            android:background="@color/btn_login_bg"
             app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
 
         <ListView
+            android:id="@+id/edAttributesListView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/edAttributesListView"
-            android:layout_marginTop="10dp" />
+            android:layout_marginTop="10dp"
+            android:headerDividersEnabled="false" />
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>

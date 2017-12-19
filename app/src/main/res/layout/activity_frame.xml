@@ -15,7 +15,7 @@
             android:id="@+id/Toolbar2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/colorPrimary"
+            android:background="@color/btn_login_bg"
             app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
 
         <ListView

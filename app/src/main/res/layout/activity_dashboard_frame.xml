@@ -17,7 +17,7 @@
             android:id="@+id/dashboardToolbar2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/colorPrimary"
+            android:background="@color/btn_login_bg"
             android:title="@string/title_frame_dashboard"
             app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
 

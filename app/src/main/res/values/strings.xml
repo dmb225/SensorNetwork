@@ -16,6 +16,7 @@
     <string name="forgotPassword">Forgot Password ?</string>
     <string name="title_activity_bottom_navigation">BottomNavigationActivity</string>
     <string name="title_home">Home</string>
+
     <string name="title_chat">Chat</string>
     <string name="title_dashboard">Devices</string>
     <string name="title_frame_dashboard">Frames</string>
@@ -23,6 +24,10 @@
     <string name="title_settings">Settings</string>
     <string name="title_frame">Frames</string>
     <string name="title_activity_home">HomeActivity</string>
+    <string name="home_speech">\n\n\n\n\n\n\n\n\nNavigate through the different windows to see your sensors data collected and updated in real time.\n
+                           The Device window shows your device information.\n
+                           The Frame window shows the last updated data frames </string>
+
 
     <string name="email">Email</string>
     <string name="minimum_password">Password too short, enter minimum 6 characters!</string>
@@ -38,7 +43,7 @@
     <string name="hint_password">Password</string>
     <string name="hint_name">Fullname</string>
     <string name="btn_login">LOGIN</string>
-    <string name="btn_link_to_register">Not a member? Get registered in Firebase now!</string>
+    <string name="btn_link_to_register">Not a member? Get registered in few clicks.</string>
     <string name="btn_link_to_login">Already registered. Login Me!</string>
     <string name="title_activity_reset_password">ResetPasswordActivity</string>
     <string name="btn_forgot_password">Forgot your password?</string>

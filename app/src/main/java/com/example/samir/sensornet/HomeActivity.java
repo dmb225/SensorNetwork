@@ -1,5 +1,7 @@
 package com.example.samir.sensornet;
 
+import android.os.Bundle;
+
 public class HomeActivity extends MenuActivity {
 
     @Override
@@ -10,5 +12,13 @@ public class HomeActivity extends MenuActivity {
     @Override
     int getNavigationMenuItemId() {
         return R.id.navigation_home;
+    }
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+
+
+
     }
 }
