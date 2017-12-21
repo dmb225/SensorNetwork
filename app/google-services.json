@@ -1,9 +1,9 @@
 {
   "project_info": {
     "project_number": "783474711462",
-    "firebase_url": "https://sensornetwork-ceaff.firebaseio.com",
-    "project_id": "sensornetwork-ceaff",
-    "storage_bucket": "sensornetwork-ceaff.appspot.com"
+    "firebase_url": "https://androidstudio-baddd.firebaseio.com/",//"https://sensornetwork-ceaff.firebaseio.com",
+    "project_id": "androidstudio-baddd",//"sensornetwork-ceaff",
+    "storage_bucket": "androidstudio-baddd.appspot.com"//"sensornetwork-ceaff.appspot.com"
   },
   "client": [
     {
