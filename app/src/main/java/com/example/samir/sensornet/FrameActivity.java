@@ -54,6 +54,7 @@ public class FrameActivity extends AppCompatActivity {
             FrameDBRef.addValueEventListener(new ValueEventListener() {
                 @Override
                 public void onDataChange(DataSnapshot dataSnapshot) {
+                    arrayList.clear();
                     for(DataSnapshot dev : dataSnapshot.getChildren()) {
                         if(dev.getValue() instanceof ArrayList){
                             ArrayList<Map<String,String>> list = (ArrayList<Map<String,String>>) dev.getValue();
