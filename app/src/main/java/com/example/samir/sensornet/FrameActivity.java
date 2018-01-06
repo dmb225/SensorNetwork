@@ -36,7 +36,6 @@ public class FrameActivity extends AppCompatActivity {
     private ArrayList<String> arrayList;
     private ListView frameListView;
 
-
     protected void CheckBoundaries(Map<String,String> m){
         //Collecting the sensor's type and value
         String name = m.get("type");
@@ -56,7 +55,6 @@ public class FrameActivity extends AppCompatActivity {
                 Notify(name, Float.toString(val));
         }
     }
-
 
     protected void Notify(String type, String val){
         // The id of the channel.
@@ -108,7 +106,6 @@ public class FrameActivity extends AppCompatActivity {
             FrameDBRef = fbDataBase.getReference("FRAMES").child(frameId);
 
             mframeToolbar.setTitle(frameId);
-
             arrayList = new ArrayList<>(Arrays.asList(items));
             listAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, arrayList);
             arrayList.add("Current frame description");
@@ -120,7 +117,7 @@ public class FrameActivity extends AppCompatActivity {
                 public void onDataChange(DataSnapshot dataSnapshot) {
                     arrayList.clear();
                     for(DataSnapshot dev : dataSnapshot.getChildren()) {
-                        if(dev.getValue() instanceof ArrayList){
+                        /*if(dev.getValue() instanceof ArrayList){
                             ArrayList<Map<String,String>> list = (ArrayList<Map<String,String>>) dev.getValue();
                             String PrettyList = new String();
                             for(Map<String,String> m : list){
@@ -133,7 +130,18 @@ public class FrameActivity extends AppCompatActivity {
                             }
                             arrayList.add(dev.getKey() + ": " + PrettyList);
                             listAdapter.notifyDataSetChanged();
-                        } else{
+                        }*/
+                        if(dev.getValue() instanceof Map){
+                            Map<String, Float> list = (Map<String,Float>) dev.getValue();
+                            Set<String> keys = list.keySet();
+                            String PrettyList = new String();
+                            for(String key : keys){
+                                PrettyList += "\n" + key + ": \t" + String.valueOf(list.get(key)) + "\n";
+                            }
+                            arrayList.add(PrettyList);
+                            listAdapter.notifyDataSetChanged();
+                        }
+                        else{
                             arrayList.add(dev.getKey() + ": " + dev.getValue(String.class));
                             listAdapter.notifyDataSetChanged();
                         }
@@ -142,7 +150,6 @@ public class FrameActivity extends AppCompatActivity {
 
                 @Override
                 public void onCancelled(DatabaseError databaseError) {
-
                 }
             });
         }
