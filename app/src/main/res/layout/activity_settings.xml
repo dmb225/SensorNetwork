@@ -19,12 +19,19 @@
             android:orientation="vertical">
 
             <android.support.v7.widget.Toolbar
-                android:id="@+id/toolbar2"
+                android:id="@+id/settings_toolbar"
+                android:minHeight="?attr/actionBarSize"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="64dp"
                 android:background="@color/btn_login_bg"
                 app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
                 app:title="@string/title_settings" />
+
+            <GridView
+                android:id="@+id/sensorBoundariesGrid"
+                android:layout_width="match_parent"
+                android:layout_height="211dp"
+                android:layout_marginTop="10dp" />
 
             <Button
                 android:id="@+id/sign_out"
@@ -38,7 +45,6 @@
                 android:elevation="0dp"
                 android:fontFamily="@font/neo"
                 android:text="@string/btn_sign_out"
-
                 android:textColor="@android:color/background_light"
                 android:textStyle="bold" />
 
