@@ -21,7 +21,7 @@ public class SettingsActivity extends MenuActivity {
     String [] items = {"Pression", "Temperature"};
     ArrayAdapter<String> listAdapter;
     private ArrayList<String> arrayList;
-    private GridView boundariesGridView;
+    private ListView boundariesListView;
 
     private FirebaseAuth.AuthStateListener authListener;
     private FirebaseAuth fbAuth;
@@ -47,8 +47,8 @@ public class SettingsActivity extends MenuActivity {
         arrayList = new ArrayList<>(Arrays.asList(items));
         listAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, arrayList);
 
-        boundariesGridView = (GridView) findViewById(R.id.sensorBoundariesGrid);
-        boundariesGridView.setAdapter(listAdapter);
+        boundariesListView = (ListView) findViewById(R.id.sensorBoundariesList);
+        boundariesListView.setAdapter(listAdapter);
 
         listAdapter.notifyDataSetChanged();
 

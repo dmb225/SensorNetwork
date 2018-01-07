@@ -27,8 +27,8 @@
                 app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
                 app:title="@string/title_settings" />
 
-            <GridView
-                android:id="@+id/sensorBoundariesGrid"
+            <ListView
+                android:id="@+id/sensorBoundariesList"
                 android:layout_width="match_parent"
                 android:layout_height="211dp"
                 android:layout_marginTop="10dp" />
