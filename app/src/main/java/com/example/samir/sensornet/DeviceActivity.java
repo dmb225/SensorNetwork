@@ -52,6 +52,7 @@ public class DeviceActivity extends AppCompatActivity {
             DeviceDBRef.addValueEventListener(new ValueEventListener() {
                 @Override
                 public void onDataChange(DataSnapshot dataSnapshot) {
+                    arrayList.clear();
                     for(DataSnapshot dev : dataSnapshot.getChildren()) {
                         arrayList.add(dev.getKey() + ": " + dev.getValue(String.class));
                         listAdapter.notifyDataSetChanged();

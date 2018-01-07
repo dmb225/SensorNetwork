@@ -1,35 +1,35 @@
 {
   "project_info": {
-    "project_number": "783474711462",
-    "firebase_url": "https://sensornetwork-ceaff.firebaseio.com",
-    "project_id": "sensornetwork-ceaff",
-    "storage_bucket": "sensornetwork-ceaff.appspot.com"
+    "project_number": "1083921406965",
+    "firebase_url": "https://androidstudio-baddd.firebaseio.com",
+    "project_id": "androidstudio-baddd",
+    "storage_bucket": "androidstudio-baddd.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:783474711462:android:51b50fc3c187e6b4",
+        "mobilesdk_app_id": "1:1083921406965:android:6c63937681432e30",
         "android_client_info": {
           "package_name": "com.example.samir.sensornet"
         }
       },
       "oauth_client": [
         {
-          "client_id": "783474711462-obuant07r4qf00kgsccpmbj40scf8t95.apps.googleusercontent.com",
+          "client_id": "1083921406965-m3a0nh4a1hhq994qddsn0npdrofe5rav.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.example.samir.sensornet",
-            "certificate_hash": "b94d4507d9bedb6ac64b6dfcb9eba20d19fc1e91"
+            "certificate_hash": "890ad55e7e920ac4e62b10bc83cc358d3ff2575e"
           }
         },
         {
-          "client_id": "783474711462-bl6sfe14ifeoma660p5g46amsthkhn18.apps.googleusercontent.com",
+          "client_id": "1083921406965-h3kpvb8o7pj9m1148lolk5nulr385e9s.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCrSdBxhyIPNoN6n2pvXnJJ97snbYNbS6M"
+          "current_key": "AIzaSyAOdwR3VmXJW83wR6oLRd_j7W-T0SHpvr0"
         }
       ],
       "services": {
@@ -40,7 +40,7 @@
           "status": 2,
           "other_platform_oauth_client": [
             {
-              "client_id": "783474711462-bl6sfe14ifeoma660p5g46amsthkhn18.apps.googleusercontent.com",
+              "client_id": "1083921406965-h3kpvb8o7pj9m1148lolk5nulr385e9s.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

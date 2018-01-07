@@ -57,6 +57,7 @@ public class DashboardActivity extends MenuActivity {
         dbRef.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
+                arrayList.clear();
                 for(DataSnapshot dev : dataSnapshot.getChildren()) {
                     arrayList.add(dev.getKey());
                     listAdapter.notifyDataSetChanged();
